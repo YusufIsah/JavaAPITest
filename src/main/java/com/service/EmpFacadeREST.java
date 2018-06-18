@@ -25,7 +25,7 @@ import javax.ws.rs.core.MediaType;
  * @author Yusuf
  */
 @Stateless
-@Path("com.entity.emp")
+@Path("emps")
 public class EmpFacadeREST extends AbstractFacade<Emp> {
 
     @PersistenceContext(unitName = "com.mycompany_AngularBackEnd_war_1.0-SNAPSHOTPU")

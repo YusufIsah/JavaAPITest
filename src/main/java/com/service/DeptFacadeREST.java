@@ -25,7 +25,7 @@ import javax.ws.rs.core.MediaType;
  * @author Yusuf
  */
 @Stateless
-@Path("com.entity.dept")
+@Path("depts")
 public class DeptFacadeREST extends AbstractFacade<Dept> {
 
     @PersistenceContext(unitName = "com.mycompany_AngularBackEnd_war_1.0-SNAPSHOTPU")
