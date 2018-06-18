@@ -25,6 +25,7 @@ public class ApplicationConfig extends Application{
     }
     
     private void addRestResourceClasses(Set<Class<?>> resources){
+        resources.add(com.entity.NewCrossOriginResourceSharingFilter.class);
         resources.add(com.service.DeptFacadeREST.class);
         resources.add(com.service.EmpFacadeREST.class);
         resources.add(org.eclipse.persistence.jpa.rs.exceptions.ClassNotFoundExceptionMapper.class);
@@ -62,5 +63,5 @@ public class ApplicationConfig extends Application{
         resources.add(org.eclipse.persistence.jpa.rs.resources.unversioned.PersistenceUnitResource.class);
         resources.add(org.eclipse.persistence.jpa.rs.resources.unversioned.QueryResource.class);
         resources.add(org.eclipse.persistence.jpa.rs.resources.unversioned.SingleResultQueryResource.class);
-    }
+}
 }
